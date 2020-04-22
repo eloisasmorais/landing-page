@@ -1,4 +1,4 @@
-# landing-page - Coffee Club House
+# Landing page - Coffee Club House
 
 [Click here](https://cranky-pike-69bc35.netlify.app/) to see the project live!
 

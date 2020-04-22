@@ -1,5 +1,7 @@
 # landing-page
 
+[Click here](https://cranky-pike-69bc35.netlify.app/) to see the project live!
+
 This README has the intention of outlining some of the project details
 
 ## Project decisions

@@ -1,6 +1,6 @@
 # landing-page
 
-This README has the intention of outlining some of the project details (see Portuguese version below)
+This README has the intention of outlining some of the project details
 
 ## Project decisions
 

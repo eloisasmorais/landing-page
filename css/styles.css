@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:300,700&display=swap');
+
+body {
+  font-family: 'Fira Sans', sans-serif;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container img {
+  width: 150px;
+}
+
+h1 {
+  font-size: 1em;
+}
+
+p,
+h1,
+h3 {
+  text-align: left;
+  margin: 0;
+}
+
+h1,
+h3 {
+  text-transform: uppercase;
+}
+
+p {
+  width: 65%;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  padding: 1em 2em;
+  background-color: #232121;
+}
+
+.container {
+  text-align: center;
+  margin: 3em 0;
+}
+
+header {
+  margin: 3em 0;
+  background-image: url('../assets/coffee-2.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 3em 0;
+  text-align: center;
+}
+
+header p {
+  padding-bottom: 6em;
+}
+
+header .grid {
+  margin: 0 auto 6em;
+}
+
+.grid {
+  margin: 3em auto;
+  width: 60%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.coffee-1,
+.coffee-2,
+.coffee-3 {
+  height: 2em;
+  width: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.coffee-1 {
+  background-image: url('../assets/coffee-3.jpg');
+}
+.coffee-2 {
+  align-self: flex-end;
+  background-image: url('../assets/coffee-4.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.coffee-3 {
+  background-image: url('../assets/coffee-5.jpg');
+}
+
+.banner {
+  background-image: url('../assets/coffee.jpg');
+  color: #232121;
+  background-position: contain;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+  padding: 3em 0;
+  text-align: center;
+}
+
+.banner h3 {
+  text-align: center;
+  padding-bottom: 3em;
+}
+
+footer p {
+  width: 100%;
+  text-align: center;
+  padding: 3em 0;
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    text-align: right;
+  }
+
+  header .grid {
+    width: 50%;
+    margin: 0 3em 6em;
+  }
+
+  header a {
+    margin-right: 3em;
+  }
+
+  .coffee-1,
+  .coffee-2,
+  .coffee-3 {
+    height: 200px;
+    width: 70%;
+  }
+
+  main .grid {
+    color: #fff;
+    padding: 2em;
+    margin: 0 auto 3em;
+    position: relative;
+    top: -2.5em;
+  }
+
+  .box-1 {
+    background-color: #5a423c;
+  }
+
+  .box-2 {
+    background-color: #1e1f1a;
+  }
+
+  .box-3 {
+    background-color: #2d110a;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  body {
+    font-size: 24px;
+    padding: 0 6em;
+  }
+
+  header {
+    margin: 6em 0;
+  }
+
+  .coffee-1,
+  .coffee-2,
+  .coffee-3,
+  .box-1,
+  .box-2,
+  .box-3 {
+    max-width: 70%;
+    opacity: 0;
+    white-space: nowrap;
+  }
+
+  .coffee-1,
+  .coffee-2,
+  .coffee-3 {
+    height: 400px;
+  }
+
+  footer p {
+    font-size: 16px;
+  }
+
+  .coffee-1.animate,
+  .coffee-2.animate,
+  .coffee-3.animate {
+    animation: expand-max ease-in 0.7s forwards;
+  }
+  .box-1.animate,
+  .box-2.animate,
+  .box-3.animate {
+    animation: expand-min ease-in 0.3s forwards;
+  }
+
+  .banner {
+    padding: 5em 0;
+  }
+}
+
+@keyframes expand-max {
+  0% {
+    width: 20%;
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+    width: 100%;
+  }
+}
+@keyframes expand-min {
+  0% {
+    width: 40%;
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
+}
